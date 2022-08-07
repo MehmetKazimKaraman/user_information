@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanıcı Sayfası</title>
+    <link rel="stylesheet" href="projestyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="kullanıcı">Kullanıcı Bilgileri</h2>
+        <div class="input_area">
+            <input type="text" id="name" name="kutu" placeholder="Name Surname">
+            <button id="btnekle" type="button" class="soleklebtn" onClick="addItem()" onblur="checkTextField(this);">
+                Sola Ekle
+            </button>
+            <button id="btnekle2" type="button" class="sageklebtn" onClick="addItem2()" onblur="checkTextField(this);">
+                Sağa Ekle
+            </button>
+            <button id="btnfiltre" type="button" class="sagfiltrebtn" onClick="filtrele()">
+                Sol Filtrele
+            </button>
+            <button id="btnfiltre2" type="button" class="solfiltrebtn" onClick="filtrele2()">
+                Sağ Filtrele
+            </button>
+        </div>
+        <div class="kutu">
+            <div id="liste" class="list-group">
+            </div>
+        </div>
+        <div class="kutu">
+            <div id="aktarliste" class="list-group">
+            </div>
+
+        </div>
+    </div>
+    <script src="proje.js"></script>
+</body>
+
+</html>
